@@ -19,17 +19,206 @@ body {
   color: white;
 }
 
+.t2 {
+  position: absolute;
+  width: 90%;
+  top: 19%;
+  left: 5%;
+  text-align: right;
+  font-size: 2.5em;
+  color: white;
+}
+
+.weekbox {
+  position: absolute;
+  width: 36%;
+  height: 1.8%;
+  top: 25%;
+  border-radius: 0.15em;
+  background-color: #2EC4B6;
+}
+
+.t3 {
+  position: absolute;
+  width: 70%;
+  top: 25.3%;
+  left: 26%;
+  font-size: 0.6em;
+}
+
+.daytext {
+  position: absolute;
+  width: 10%;
+}
+
+.vehicleArea {
+  position: absolute;
+  width: 90%;
+  height: 70%;
+  top: 28%;
+  left: 7.5%;
+  background-color: #23272D;
+}
+
+.vehicleBox {
+  position: absolute;
+  width: 20%;
+  height: 9%;
+  left: -5%;
+  border-radius: 0.5em;
+  background-color: #B09E99;
+  color: white;
+}
+
 #logo {
   position: absolute;
   width: 10%;
 }
+
+#wbox1 {
+  left: 25%;
+}
+
+#wbox2 {
+  left: 60%;
+}
+
+#d1 {
+  left: 0%;
+}
+
+#d2 {
+  left: 10%;
+}
+
+#d3 {
+  left: 20%;
+}
+
+#d4 {
+  left: 30%;
+}
+
+#d5 {
+  left: 40%;
+}
+
+#d6 {
+  left: 50%;
+}
+
+#d7 {
+  left: 60%;
+}
+
+#d8 {
+  left: 70%;
+}
+
+#d9 {
+  left: 80%;
+}
+
+#d10 {
+  left: 90%;
+}
+
+#vbox1 {
+  top: 0%;
+}
+
+#vbox2 {
+  top: 9.09%;
+}
+
+#vbox3 {
+  top: 18.18%;
+}
+
+#vbox4 {
+  top: 27.27%;
+}
+
+#vbox5 {
+  top: 36.36%;
+}
+
+#vbox6 {
+  top: 45.45%;
+}
+
+#vbox7 {
+  top: 54.54%;
+}
+
+#vbox8 {
+  top: 63.63%;
+}
+
+#vbox9 {
+  top: 72.72%;
+}
+
+#vbox10 {
+  top: 81.81%;
+}
+
+#vbox11 {
+  top: 90.9%;
+}
+
+
 </style>
 </head>
+
+
+
+
+
 <body>
   <img id="logo" src="images/logo.png" />
   <div class="t1" id="title">NTC Vehicle Reservations</div>
+  <div class="t2" id="month"></div>
+  <div class="weekbox" id="wbox1"></div>
+  <div class="weekbox" id="wbox2"></div>
+  <div class="t3" id="days">
+    <span class="daytext" id="d1">13</span>
+    <span class="daytext" id="d2">14</span>
+    <span class="daytext" id="d3">15</span>
+    <span class="daytext" id="d4">16</span>
+    <span class="daytext" id="d5">17</span>
+    <span class="daytext" id="d6">20</span>
+    <span class="daytext" id="d7">21</span>
+    <span class="daytext" id="d8">22</span>
+    <span class="daytext" id="d9">23</span>
+    <span class="daytext" id="d10">24</span>
+  </div>
+
+  <div class="vehicleArea">
+    <span class="vehicleBox" id="vbox1"></span>
+    <span class="vehicleBox" id="vbox2"></span>
+    <span class="vehicleBox" id="vbox3"></span>
+    <span class="vehicleBox" id="vbox4"></span>
+    <span class="vehicleBox" id="vbox5"></span>
+    <span class="vehicleBox" id="vbox6"></span>
+    <span class="vehicleBox" id="vbox7"></span>
+    <span class="vehicleBox" id="vbox8"></span>
+    <span class="vehicleBox" id="vbox9"></span>
+    <span class="vehicleBox" id="vbox10"></span>
+    <span class="vehicleBox" id="vbox11"></span>
+  </div>
 
 <script>
+
+var logo = document.getElementById("logo");
+var t2 = document.getElementById("month");
+var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+var d = new Date();
+var n = d.getMonth();
+
+t2.innerHTML = months[n];
+
+
 
 </script>
 </body>
