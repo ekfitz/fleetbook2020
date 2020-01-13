@@ -22,7 +22,7 @@ body {
 .t2 {
   position: absolute;
   width: 90%;
-  top: 19%;
+  top: 29%;
   left: 5%;
   text-align: right;
   font-size: 2.5em;
@@ -33,7 +33,7 @@ body {
   position: absolute;
   width: 36%;
   height: 1.8%;
-  top: 25%;
+  top: 35%;
   border-radius: 0.15em;
   background-color: #2EC4B6;
 }
@@ -41,7 +41,7 @@ body {
 .t3 {
   position: absolute;
   width: 70%;
-  top: 25.3%;
+  top: 35.3%;
   left: 26%;
   font-size: 0.6em;
 }
@@ -54,8 +54,8 @@ body {
 .vehicleArea {
   position: absolute;
   width: 90%;
-  height: 70%;
-  top: 28%;
+  height: 60%;
+  top: 37.5%;
   left: 7.5%;
   background-color: #23272D;
 }
@@ -65,9 +65,31 @@ body {
   width: 20%;
   height: 9%;
   left: -5%;
-  border-radius: 0.5em;
+  border-radius: 0.3em;
   background-color: #B09E99;
-  color: white;
+}
+
+.vehicleMake {
+  position: absolute;
+  top: 10%;
+  left: 6%;
+  font-size: 0.55em;
+  color: black;
+}
+.vehicleName {
+  position: absolute;
+  top: 35%;
+  left: 6%;
+  font-size: 0.55em;
+  color: black;
+  }
+
+.licensePlate {
+  position: absolute;
+  top: 60%;
+  left: 6%;
+  font-size: 0.55em;
+  color: black;
 }
 
 #logo {
@@ -195,17 +217,17 @@ body {
   </div>
 
   <div class="vehicleArea">
-    <span class="vehicleBox" id="vbox1"></span>
-    <span class="vehicleBox" id="vbox2"></span>
-    <span class="vehicleBox" id="vbox3"></span>
-    <span class="vehicleBox" id="vbox4"></span>
-    <span class="vehicleBox" id="vbox5"></span>
-    <span class="vehicleBox" id="vbox6"></span>
-    <span class="vehicleBox" id="vbox7"></span>
-    <span class="vehicleBox" id="vbox8"></span>
-    <span class="vehicleBox" id="vbox9"></span>
-    <span class="vehicleBox" id="vbox10"></span>
-    <span class="vehicleBox" id="vbox11"></span>
+    <div class="vehicleBox" id="vbox1"><span class="vehicleMake" id="vmake1">Chevy</span><span class="vehicleName" id="vname1">Malibu</span><span class="licensePlate" id="lic1">G10-3028M</span></div>
+    <div class="vehicleBox" id="vbox2"><span class="vehicleMake" id="vmake2">Ford</span><span class="vehicleName" id="vname2">Transit</span><span class="licensePlate" id="lic2">G42-1666W</span></div>
+    <div class="vehicleBox" id="vbox3"><span class="vehicleMake" id="vmake3">Chevy</span><span class="vehicleName" id="vname3">Silverado</span><span class="licensePlate" id="lic3">G62-1407N</span></div>
+    <div class="vehicleBox" id="vbox4"><span class="vehicleMake" id="vmake4">Ford</span><span class="vehicleName" id="vname4">Expedition</span><span class="licensePlate" id="lic4">G62-1831S</span></div>
+    <div class="vehicleBox" id="vbox5"><span class="vehicleMake" id="vmake5">Chevy</span><span class="vehicleName" id="vname5">Tahoe</span><span class="licensePlate" id="lic5">G62-5020W</span></div>
+    <div class="vehicleBox" id="vbox6"><span class="vehicleMake" id="vmake6">Chevy</span><span class="vehicleName" id="vname6">Express</span><span class="licensePlate" id="lic6">I422298</span></div>
+    <div class="vehicleBox" id="vbox7"><span class="vehicleMake" id="vmake7">Ford</span><span class="vehicleName" id="vname7">E350</span><span class="licensePlate" id="lic7">I622013</span></div>
+    <div class="vehicleBox" id="vbox8"><span class="vehicleMake" id="vmake8">Ford</span><span class="vehicleName" id="vname8">E350</span><span class="licensePlate" id="lic8">I622014</span></div>
+    <div class="vehicleBox" id="vbox9"><span class="vehicleMake" id="vmake9">Ford</span><span class="vehicleName" id="vname9">E350</span><span class="licensePlate" id="lic9">I622015</span></div>
+    <div class="vehicleBox" id="vbox10"><span class="vehicleMake" id="vmake10">Ford</span><span class="vehicleName" id="vname10">E350</span><span class="licensePlate" id="lic10">I622016</span></div>
+    <div class="vehicleBox" id="vbox11"><span class="vehicleMake" id="vmake11">Chevy</span><span class="vehicleName" id="vname11">Suburban</span><span class="licensePlate" id="lic11">I622191</span></div>
   </div>
 
 <script>
