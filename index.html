@@ -13,9 +13,10 @@ body {
 .t1 {
   position: absolute;
   width: 90%;
+  top: 1.5%;
   left: 5%;
+  font-size: 0.8em;
   text-align: right;
-  font-size: 1em;
   color: white;
 }
 
@@ -66,7 +67,7 @@ body {
   height: 9%;
   left: -5%;
   border-radius: 0.3em;
-  background-color: #B09E99;
+  background-color: #4F5165;
 }
 
 .vehicleMake {
@@ -74,14 +75,14 @@ body {
   top: 10%;
   left: 6%;
   font-size: 0.55em;
-  color: black;
+  color: #EFE9E7;
 }
 .vehicleName {
   position: absolute;
   top: 35%;
   left: 6%;
   font-size: 0.55em;
-  color: black;
+  color: #EFE9E7;
   }
 
 .licensePlate {
@@ -89,12 +90,33 @@ body {
   top: 60%;
   left: 6%;
   font-size: 0.55em;
-  color: black;
+  color: #EFE9E7;
+}
+
+.reservationArea {
+  position: absolute;
+  width: 70%;
+  height: 60%;
+  top: 37.5%;
+  left: 25%;
+}
+
+.reservationBox {
+  position: absolute;
+  height: 8.5%;
+  border-radius: 0.5em;
+}
+
+.reservationText {
+  position: absolute;
+  top: 12%;
+  padding: 0.5em;
+  font-size: 0.7em;
 }
 
 #logo {
   position: absolute;
-  width: 10%;
+  width: 30%;
 }
 
 #wbox1 {
@@ -103,6 +125,7 @@ body {
 
 #wbox2 {
   left: 60%;
+  background-color: #1E7D74;
 }
 
 #d1 {
@@ -189,6 +212,96 @@ body {
   top: 90.9%;
 }
 
+#maliRes1 {
+  top: 0%;
+}
+
+#tranRes1 {
+  top: 9.09%;
+}
+
+#silvRes1 {
+  top: 18.18%;
+  width: 100%;
+  background-color: #111344;
+  color: #EFE9E7;
+}
+
+#expeRes1 {
+  top: 27.27%;
+  width: 50%;
+  background-color: #AA6373;
+}
+#tahoRes1 {
+  top: 36.36%;
+}
+
+#exprRes1 {
+  top: 45.45%;
+}
+
+#exprRes2 {
+  top: 45.45%;
+  left: 50%;
+  width: 50%;
+  background-color: #AD7A99;
+}
+
+#f013Res1 {
+  top: 54.54%;
+}
+
+#f013Res2 {
+  top: 54.54%;
+  left: 50%;
+  width: 50%;
+  background-color: #1C5D99;
+}
+
+#f014Res1 {
+  top: 63.63%;
+  width: 50%;
+  background-color: #639FAB;
+}
+
+#f014Res2 {
+  top: 63.63%;
+  left: 50%;
+  width: 50%;
+  background-color: #1C5D99;
+}
+
+#f015Res1 {
+  top: 72.72%;
+  width: 50%;
+  background-color: #639FAB;
+}
+
+#f015Res2 {
+  top: 72.72%;
+  left: 50%;
+  width: 50%;
+  background-color: #1C5D99;
+}
+
+#f016Res1 {
+  top: 81.81%;
+  width: 50%;
+  background-color: #D5573B;
+}
+
+#f016Res2 {
+  top: 81.81%;
+  left: 50%;
+  width: 50%;
+  background-color: #1C5D99;
+}
+
+#subuRes1 {
+  top: 90.9%;
+  width: 50%;
+  background-color: #D3B99F;
+}
 
 </style>
 </head>
@@ -199,7 +312,10 @@ body {
 
 <body>
   <img id="logo" src="images/logo.png" />
-  <div class="t1" id="title">NTC Vehicle Reservations</div>
+  <div class="t1" id="title">
+    <div class="titleText" id="titleText1">Vehicle Reservations</div>
+    <div class="titleText" id="titleText2">Bureau of Land Management</div>
+    <div class="titleText" id="titleText3">National Training Center</div></div>
   <div class="t2" id="month"></div>
   <div class="weekbox" id="wbox1"></div>
   <div class="weekbox" id="wbox2"></div>
@@ -228,6 +344,28 @@ body {
     <div class="vehicleBox" id="vbox9"><span class="vehicleMake" id="vmake9">Ford</span><span class="vehicleName" id="vname9">E350</span><span class="licensePlate" id="lic9">I622015</span></div>
     <div class="vehicleBox" id="vbox10"><span class="vehicleMake" id="vmake10">Ford</span><span class="vehicleName" id="vname10">E350</span><span class="licensePlate" id="lic10">I622016</span></div>
     <div class="vehicleBox" id="vbox11"><span class="vehicleMake" id="vmake11">Chevy</span><span class="vehicleName" id="vname11">Suburban</span><span class="licensePlate" id="lic11">I622191</span></div>
+  </div>
+
+  <div class="reservationArea">
+    <div class="reservationBox" id="maliRes1"><span class="reservationText" id="maliResText1"></span></div>
+    <div class="reservationBox" id="tranRes1"><span class="reservationText" id="tranResText1"></span></div>
+    <div class="reservationBox" id="silvRes1"><span class="reservationText" id="silvResText1">Whitlock</span></div>
+    <div class="reservationBox" id="expeRes1"><span class="reservationText" id="expeResText1">Packer</span></div>
+    <div class="reservationBox" id="tahoRes1"><span class="reservationText" id="tahoResText1"></span></div>
+    <div class="reservationBox" id="exprRes1"><span class="reservationText" id="exprResText1"></span></div>
+    <div class="reservationBox" id="exprRes2"><span class="reservationText" id="exprResText2">HR Improvement Team</span></div>
+    <div class="reservationBox" id="f013Res1"><span class="reservationText" id="f013ResText1"></span></div>
+    <div class="reservationBox" id="f013Res2"><span class="reservationText" id="f013ResText2">BLR</span></div>
+    <div class="reservationBox" id="f014Res1"><span class="reservationText" id="f014ResText1">Huhta</span></div>
+    <div class="reservationBox" id="f014Res2"><span class="reservationText" id="f014ResText2">BLR</span></div>
+    <div class="reservationBox" id="f015Res1"><span class="reservationText" id="f015ResText1">Huhta</span></div>
+    <div class="reservationBox" id="f015Res2"><span class="reservationText" id="f015ResText2">BLR</span></div>
+    <div class="reservationBox" id="f016Res1"><span class="reservationText" id="f016ResText1">NEPA</span></div>
+    <div class="reservationBox" id="f016Res2"><span class="reservationText" id="f016ResText2">BLR</span></div>
+    <div class="reservationBox" id="subuRes1"><span class="reservationText" id="subuResText1">WHB</span></div>
+    <div class="reservationBox" id="subuRes2"><span class="reservationText" id="subuResText2"></span></div>
+
+
   </div>
 
 <script>

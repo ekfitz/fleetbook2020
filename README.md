@@ -1,5 +1,2 @@
-# fleetbook2020
-Vehicle reservation dashboard
-# Monday January 13, 2020
-Layout and basic 2 week calendar setup.
-Populate vehicle info. Formatting
+#Tuesday January 14, 2020
+Complete 2 week schedule for 11 vehicles
